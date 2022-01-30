@@ -1,0 +1,156 @@
+body {
+    background: url(./SalesInquiryFormBackground.jpg) no-repeat 0% 87% fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+#divHeader {
+    text-align: center;
+    /* padding: 26px 0px; */
+    padding: 4px 0px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-top: -51px;
+}
+form {
+    /* padding: 52px 8px 30px 8px; */
+    padding: 27px 8px 6px 8px;
+}
+#divBody {
+    width: 70%;
+    font-family: 'Roboto', sans-serif;
+    margin: 8px auto 0px;
+    background: rgba(0, 0, 0, 0.7);
+}
+#divHeader h1 {
+    font-size: 49px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+#divHeader p {
+    font-size: 14px;
+    margin-bottom: 28px;
+    line-height: 28px;
+    margin-top: -38px;
+}
+#divBody ul {
+    float: left;
+    width: 50%;
+}
+ol, ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+#textAreaInquiry{
+    min-height: 76px;
+    resize: none;
+    outline: none;
+    padding: 7px;
+    color: white;
+    outline: none;
+    width: 62%;
+    float: left;
+    margin-left: 6px;
+    background: transparent;
+    border: 1px solid white;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 16px;
+    margin-right: 4px;
+}
+.selectState{
+    padding: 7px;
+    color: white;
+    outline: none;
+    width: 62%;
+    float: left;
+    margin-left: 6px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid white;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 16px;
+    margin-right: 4px;
+}
+select:option{
+    background: rgba(0, 0, 0, 0.7);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+list:option{
+    background: rgba(0, 0, 0, 0.7);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+li.text {
+    width: 24%;
+    color: white;
+    float: left;
+    text-align: right;
+    letter-spacing: 1px;
+    font-size: 15px;
+    text-transform: capitalize;
+    padding-top: 7px;
+    font-family: 'Roboto', sans-serif;
+}
+#divBody li input[type="text"], .divBody ul li textAreaInquiry {
+    padding: 7px;
+    color: white;
+    outline: none;
+    width: 62%;
+    float: left;
+    margin-left: 6px;
+    background: transparent;
+    border: 1px solid white;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 16px;
+    margin-right: 4px;
+}
+.clear {
+    clear: both;
+}
+.divSubmit {
+    text-align: center;
+    /* margin: 30px 0px 0px; */
+    margin: 16px 0px 5px;
+}
+.divSubmit input[type="submit"] {
+    background: #e1306c;
+    transition: .5s ease-out;
+}
+input[type="submit"]:hover{
+    background: #961f44;
+    transition: .5s ease-in;
+}
+.divSubmit input[type="reset"] {
+    background: #0099cc;
+    transition: .5s ease-out;
+}
+input[type="reset"]:hover{
+    background: #00465e;
+    transition: .5s ease-in;
+
+}
+.divSubmit input[type="submit"], .divSubmit input[type="reset"] {
+    padding: 12px 36px;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    margin: 0px 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+}
+
+.footer {
+    text-align: center;
+    /* padding: 25px 0px 0px; */
+    padding: 0px 0px 0px;
+}
+.footer p {
+    color: white;
+    font-weight: 100;
+}

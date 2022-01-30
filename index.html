@@ -1,0 +1,148 @@
+<html>
+
+<head>
+    <title>Sales Inquiry Form</title>
+    <link rel="stylesheet" href="./SalesInquiryFormDesign.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+
+    <script src="./SalesInquiryFormValidation.js"></script>
+</head>
+
+<body>
+
+
+
+    <div id="divHeader">
+        <h1>Sales Inquiry Form</h1>
+        <p>If you have any queries on Sales please take a moment to fill up this form and one of our sales
+            representative will contact you soon.</p>
+    </div>
+
+    <div id="divBody">
+        <div id="divForm">
+            <form onsubmit="return validateSalesInquiryForm()">
+                <ul>
+                    <li class="text">name : </li>
+                    <li><input name="name" type="text" id="txtName"><span style="color:red">*</span></li>
+                </ul>
+                <ul>
+                    <li class="text">organization : </li>
+                    <li><input name="organization" type="text" id="txtOrg"><span style="color:red">*</span></li>
+                </ul>
+                <ul>
+                    <li class="text">E-mail : </li>
+                    <li><input name="E-mail" type="text" id="txtEmail"><span style="color:red">*</span></li>
+                </ul>
+                <ul>
+                    <li class="text">contact no : </li>
+                    <li><input name="contact" type="text" id="txtCntctNo"><span style="color:red">*</span></li>
+                </ul>
+                <ul>
+                    <li class="text">mobile no : </li>
+                    <li><input name="mobile" type="text" id="txtNumber"><span style="color:red">*</span></li>
+                </ul>
+                <ul>
+                    <li class="text">fax : </li>
+                    <li><input name="fax" type="text" id="txtFax"><span style="color:red">*</span></li>
+                </ul>
+                <ul>
+                    <li class="text">address 1 : </li>
+                    <li><input name="addr 1" type="text" id="txtAdrs1"><span style="color:red">*</span></li>
+                </ul>
+                <ul>
+                    <li class="text">address 2 : </li>
+                    <li><input name="addr 2" type="text" id="txtAdrs2"><span style="color:red">*</span></li>
+                </ul>
+                <ul>
+                    <li class="text">country : </li>
+                    <!-- <li><input name="country" type="text" id="txtCountry"></li> -->
+                    <li><input list="country" name="country" type="text" id="txtCountry">
+                        <datalist id="country">
+                            <option value="India">
+                            <option value="USA">
+                            <option value="China">
+                            <option value="Germany">
+                            <option value="Italy">
+                            <option value="Sri Lanka">
+                        </datalist><span style="color:red">*</span></li>
+                </ul>
+                <ul>
+                    <li class="text">state : </li>
+                    <!-- <li><input name="state" type="text" id="txtState"></li> -->
+                    <li><select name="stateslist" class="selectState" id="selectYourState">
+                        <option value="Default" class="optionState">---Select State---</option>
+                        <option value="Andaman and Nicobar Islands" class="optionState">Andaman and Nicobar Islands
+                        </option>
+                        <option value="Andhra Pradesh" class="optionState">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh" class="optionState">Arunachal Pradesh</option>
+                        <option value="Assam" class="optionState">Assam</option>
+                        <option value="Bihar" class="optionState">Bihar</option>
+                        <option value="Chandigarh" class="optionState">Chandigarh</option>
+                        <option value="Chhattisgarh" class="optionState">Chhattisgarh</option>
+                        <option value="Dadra and Nagar Haveli" class="optionState">Dadra and Nagar Haveli</option>
+                        <option value="Daman and Diu" class="optionState">Daman and Diu</option>
+                        <option value="Delhi" class="optionState">Delhi</option>
+                        <option value="Goa" class="optionState">Goa</option>
+                        <option value="Gujarat" class="optionState">Gujarat</option>
+                        <option value="Haryana" class="optionState">Haryana</option>
+                        <option value="Himachal Pradesh" class="optionState">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir" class="optionState">Jammu and Kashmir</option>
+                        <option value="Jharkhand" class="optionState">Jharkhand</option>
+                        <option value="Karnataka" class="optionState">Karnataka</option>
+                        <option value="Kerala" class="optionState">Kerala</option>
+                        <option value="Lakshadweep" class="optionState">Lakshadweep</option>
+                        <option value="Madhya Pradesh" class="optionState">Madhya Pradesh</option>
+                        <option value="Maharashtra" class="optionState">Maharashtra</option>
+                        <option value="Manipur" class="optionState">Manipur</option>
+                        <option value="Meghalaya" class="optionState">Meghalaya</option>
+                        <option value="Mizoram" class="optionState">Mizoram</option>
+                        <option value="Nagaland" class="optionState">Nagaland</option>
+                        <option value="Orissa" class="optionState">Orissa</option>
+                        <option value="Pondicherry" class="optionState">Pondicherry</option>
+                        <option value="Punjab" class="optionState">Punjab</option>
+                        <option value="Rajasthan" class="optionState">Rajasthan</option>
+                        <option value="Sikkim" class="optionState">Sikkim</option>
+                        <option value="Tamil Nadu" class="optionState">Tamil Nadu</option>
+                        <option value="Tripura" class="optionState">Tripura</option>
+                        <option value="Uttaranchal" class="optionState">Uttaranchal</option>
+                        <option value="Uttar Pradesh" class="optionState">Uttar Pradesh</option>
+                        <option value="West Bengal" class="optionState">West Bengal</option>
+                    </select><span style="color:red">*</span></li>
+                </ul>
+                <ul>
+                    <li class="text">city : </li>
+                    <!-- <li><input name="city" type="text" id="txtCity"></li> -->
+                    <li><input list="city" name="city" type="text" id="txtCity">
+                        <datalist id="city">
+                            <option value="Mysore">
+                            <option value="Bangalore">
+                            <option value="Maharashtra">
+                            <option value="California">
+                            <option value="Texas">
+                            <option value="Dresden">
+                        </datalist><span style="color:red">*</span></li>
+                </ul>
+                <ul>
+                    <li class="text">zip/pin code : </li>
+                    <li><input name="pin" type="text" id="txtPinCode"><span style="color:red">*</span></li>
+                </ul>
+                <ul>
+                    <li class="text">sales inquiry : </li>
+                    <li><textarea id="textAreaInquiry"></textarea></li>
+                </ul>
+                <div class="clear"></div>
+                <div class="divSubmit" id="divSubmit">
+                    <input type="submit" value="submit">
+                    <input type="reset" value="reset">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2019 Sales Inquiry Form. All rights reserved | Design by <span style="color:#e1306c">Prajakta
+                Upasani</span></p>
+    </div>
+</body>
+
+</html>
